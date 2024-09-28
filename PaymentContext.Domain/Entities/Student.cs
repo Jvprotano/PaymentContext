@@ -28,4 +28,6 @@ public class Student : Entity
 
         _subscriptions.Add(subscription);
     }
+
+    public bool HasActiveSubscription() => _subscriptions.Any(c => c.Active);
 }
